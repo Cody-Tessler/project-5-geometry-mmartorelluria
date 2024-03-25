@@ -9,6 +9,7 @@ class Pentagon(Shape):
 
     def get_area(self):
         area = (1/4) * (math.sqrt(5*(5+2*(math.sqrt(5))))) * self.a ** 2
+        # area = "{:.2f}".format(area) # https://python.shiksha/tips/limiting-float-upto-2-places/
         return area
 
     def get_perimeter(self):
