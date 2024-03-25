@@ -8,7 +8,7 @@ class Pentagon(Shape):
         self.a = a
 
     def get_area(self):
-        area = (1 / 4) * math.sqrt(5(5+2*math.sqrt(5))) * self.a ** 2
+        area = (1/4) * (math.sqrt(5*(5+2*(math.sqrt(5))))) * self.a ** 2
         return area
 
     def get_perimeter(self):
