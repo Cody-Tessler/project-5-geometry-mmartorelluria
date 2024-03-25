@@ -10,15 +10,20 @@ from rectangle import Rectangle
 class Square(Rectangle):
 
     def __init__(self, a):
-        ...
+        super().__init__(a, a)
 
     def __str__(self):
-        return "TODO"
+        """
+        Returns a formatted string with details about EquilateralTriangle.
+
+        :return: string
+        """
+        return f"Square, a = {self.a:0.2f}"
 
     @classmethod
     def get_area_formula(cls):
-        return "TODO"
+        return "a^2"
 
     @classmethod
     def get_perimeter_formula(cls):
-        return "TODO"
+        return "4 * a"
