@@ -44,6 +44,7 @@ class ShapeList:
             return None
       
         largest_shape_perimeter = max(self.shapes, key = lambda shapes: shapes.get_perimeter())
+        # https://www.geeksforgeeks.org/python-lambda-anonymous-functions-filter-map-reduce/
         return largest_shape_perimeter
     
 
