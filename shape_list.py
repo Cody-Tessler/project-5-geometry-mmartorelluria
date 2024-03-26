@@ -41,10 +41,10 @@ class ShapeList:
         :return: Shape -> object with largest perimeter
         """
         if not self.shapes:
-            pass
-        else:
-            largest_shape_perimeter = max(self.shape, key = lambda shape: shape.get_perimeter())
-            return largest_shape_perimeter
+            return None
+      
+        largest_shape_perimeter = max(self.shapes, key = lambda shapes: shapes.get_perimeter())
+        return largest_shape_perimeter
     
 
     def get_largest_shape_by_area(self):
@@ -53,8 +53,8 @@ class ShapeList:
         :return: Shape -> object with largest area
         """
         if not self.shapes:
-            pass
-        else:
-            largest_shape_area = max(self.shape, key = lambda shape: shape.get_area())
-            return largest_shape_area
+            return None
+
+        largest_shape_area = max(self.shapes, key = lambda shapes: shapes.get_area())
+        return largest_shape_area
         
