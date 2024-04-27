@@ -40,12 +40,22 @@ class ShapeList:
         Returns shape with largest perimeter.
         :return: Shape -> object with largest perimeter
         """
-        return "TODO: return the shape with the largest perimeter"
+        if not self.shapes:
+            return None
+      
+        largest_shape_perimeter = max(self.shapes, key = lambda shapes: shapes.get_perimeter())
+        # https://www.geeksforgeeks.org/python-lambda-anonymous-functions-filter-map-reduce/
+        return largest_shape_perimeter
+    
 
     def get_largest_shape_by_area(self):
         """
         Returns shape with largest area.
         :return: Shape -> object with largest area
         """
-        return "TODO: return the shape with the largest area"
+        if not self.shapes:
+            return None
+
+        largest_shape_area = max(self.shapes, key = lambda shapes: shapes.get_area())
+        return largest_shape_area
         

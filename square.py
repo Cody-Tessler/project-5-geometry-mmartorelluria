@@ -10,15 +10,35 @@ from rectangle import Rectangle
 class Square(Rectangle):
 
     def __init__(self, a):
-        ...
+        """
+        Constructs a Square object
+
+        :param a: float -> side of square
+        """
+        super().__init__(a, a)
 
     def __str__(self):
-        return "TODO"
+        """
+        Returns a formatted string with details about Square.
+
+        :return: string
+        """
+        return f"Square, a = {self.a:0.2f}"
 
     @classmethod
     def get_area_formula(cls):
-        return "TODO"
+        """
+        Returns area formula for Square as a string.
+
+        :return: string
+        """
+        return "a ** 2"
 
     @classmethod
     def get_perimeter_formula(cls):
-        return "TODO"
+        """
+        Returns perimeter formula for Square as a string.
+
+        :return: string
+        """
+        return "4 * a"
